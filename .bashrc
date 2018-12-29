@@ -14,7 +14,10 @@ shopt -s nocaseglob;
 
 # Append to the Bash history file, rather than overwriting it
 shopt -s histappend;
-export HISTTIMEFORMAT="%F %T "
+# Bash history file settings
+HISTTIMEFORMAT="%F %T "
+HISTSIZE=1000
+HISTFILESIZE=2000
 
 # Autocorrect typos in path names when using `cd`
 shopt -s cdspell;
