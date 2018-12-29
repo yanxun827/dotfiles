@@ -1,6 +1,13 @@
 # Add `~/bin` to the `$PATH`
 export PATH="$HOME/bin:$PATH";
 
+# If not running interactively, don't do anything.
+# Some programs like scp will fail if there are outputs in the remote shell.
+case $- in
+    *i*) ;;
+      *) return;;
+esac
+
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
 # * ~/.extra can be used for other settings you don’t want to commit.
