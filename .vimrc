@@ -67,7 +67,7 @@ set laststatus=2
 " Enable mouse in all modes
 set mouse=a
 " Disable error bells
-set noerrorbells
+set noerrorbells vb t_vb=
 " Don’t reset cursor to start of line when moving around.
 set nostartofline
 " Show the cursor position
