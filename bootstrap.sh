@@ -9,6 +9,7 @@ function doIt() {
 		--exclude ".DS_Store" \
 		--exclude ".git/" \
 		--exclude "bootstrap.sh" \
+		--exclude "Solarized Dark.terminal" \
 		-avh --no-perms . ~;
 	source ~/.bash_profile;
 }
