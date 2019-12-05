@@ -1,3 +1,6 @@
+# Ubuntu doesn't automatically inherit from system inputrc if there's an inputrc file in ~
+$include /etc/inputrc
+
 # Make Tab autocomplete regardless of filename case
 set completion-ignore-case on
 
