@@ -109,3 +109,6 @@ if has("autocmd")
 	" Treat .md files as Markdown
 	autocmd BufNewFile,BufRead *.md setlocal filetype=markdown
 endif
+
+" Shortcut F2 to cycle between no line numbers, line numbers, and line number + relative
+nnoremap <F2> :let [&nu, &rnu] = [!&rnu, &nu+&rnu==1]<CR>
