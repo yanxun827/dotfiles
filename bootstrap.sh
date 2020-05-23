@@ -8,6 +8,7 @@ function doIt() {
 	rsync \
 		--exclude ".DS_Store" \
 		--exclude ".git/" \
+		--exclude ".ignore" \
 		--exclude "bootstrap.sh" \
 		--exclude "Solarized Dark.terminal" \
 		-avh --no-perms . ~;

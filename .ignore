@@ -1,0 +1,4 @@
+# This file is to prevent ripgrep from searching the files in .git/ folder.
+# It is necessary because most of the files in this repo are hidden files,
+# and by ripgrep's "--hidden" does not exclude .git/, so we do it explicitly here.
+.git/
