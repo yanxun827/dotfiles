@@ -50,9 +50,11 @@ brew_install python
 brew_install ack
 brew_install git-lfs
 brew_install tree
-brew_install wget 
-brew_install fzf
-# ${BREW_PREFIX}/opt/fzf/install
+brew_install wget
+if ! brew ls --versions fzf > /dev/null; then
+  brew_install fzf
+  ${BREW_PREFIX}/opt/fzf/install
+fi
 
 # Create directory and store symlinks for all the gnu tools installed by homebrew. 
 # Don't forget to add the directory to `$PATH`.
