@@ -5,9 +5,10 @@
 function brew_install {
   # Check if a brew formula is not installed, then installs it.
   if ! brew ls --versions $1 > /dev/null; then
+    echo "Installing $1"
     brew install $1
   else
-  	echo "$1 is already installed"
+    echo "$1 is already installed"
   fi
 }
 
@@ -51,6 +52,7 @@ brew_install ack
 brew_install git-lfs
 brew_install tree
 brew_install wget
+brew_install ripgrep
 if ! brew ls --versions fzf > /dev/null; then
   brew_install fzf
   ${BREW_PREFIX}/opt/fzf/install
