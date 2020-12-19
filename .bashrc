@@ -1,6 +1,9 @@
 # Add `~/bin` to the `$PATH`
 export PATH="$HOME/bin:$PATH";
 
+# Add `~/gnubin` to the `$PATH`. This folder stores symlinks to all the gnu tools instaled by homebrew.
+export PATH="$HOME/gnubin:$PATH";
+
 # If not running interactively, don't do anything.
 # Some programs like scp will fail if there are outputs in the remote shell.
 case $- in

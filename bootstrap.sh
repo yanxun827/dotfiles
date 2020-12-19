@@ -10,6 +10,7 @@ function doIt() {
 		--exclude ".git/" \
 		--exclude ".ignore" \
 		--exclude "bootstrap.sh" \
+		--exclude "brew.sh" \
 		--exclude "Solarized Dark.terminal" \
 		-avh --no-perms . ~;
 	source ~/.bash_profile;
@@ -18,7 +19,7 @@ function doIt() {
 if [ "$1" == "--force" -o "$1" == "-f" ]; then
 	doIt;
 else
-	read -p "This may overwrite existing files in your home directory. Are you sure? (y/n) " -n 1;
+	read -p "Copying dotfiles. This may overwrite existing files in your home directory. Are you sure? (y/n) " -n 1;
 	echo "";
 	if [[ $REPLY =~ ^[Yy]$ ]]; then
 		doIt;
