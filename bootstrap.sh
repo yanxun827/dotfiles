@@ -10,6 +10,7 @@ function doIt() {
 		--exclude ".git/" \
 		--exclude ".ignore" \
 		--exclude "bootstrap.sh" \
+		--exclude "brew.sh" \
 		--exclude "Solarized Dark.terminal" \
 		-avh --no-perms . ~;
 	source ~/.bash_profile;
