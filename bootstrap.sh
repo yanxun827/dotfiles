@@ -9,6 +9,7 @@ function doIt() {
 		--exclude ".DS_Store" \
 		--exclude ".git/" \
 		--exclude ".ignore" \
+		--exclude ".gitignore" \
 		--exclude "bootstrap.sh" \
 		--exclude "brew.sh" \
 		--exclude "Solarized Dark.terminal" \
