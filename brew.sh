@@ -51,6 +51,7 @@ brew_install python
 brew_install ack
 brew_install git-lfs
 brew_install tree
+brew_install ncdu
 brew_install wget
 brew_install ripgrep
 if ! brew ls --versions fzf > /dev/null; then
