@@ -52,7 +52,12 @@ brew_install ack
 brew_install git-lfs
 brew_install tree
 brew_install ncdu
+brew_install tmux
+brew_install nmap
 brew_install wget
+brew_install postgresql
+brew_install pyenv
+brew_install pyenv-virtualenv
 brew_install ripgrep
 if ! brew ls --versions fzf > /dev/null; then
   brew_install fzf
