@@ -1,1 +1,4 @@
+# for local binaries
+export PATH="$PATH:$HOME/.local/bin";
+
 export PATH="$PATH:$HOME/tools/flutter/bin";

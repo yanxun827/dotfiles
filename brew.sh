@@ -59,6 +59,7 @@ brew_install postgresql
 brew_install pyenv
 brew_install pyenv-virtualenv
 brew_install ripgrep
+brew_install fd
 if ! brew ls --versions fzf > /dev/null; then
   brew_install fzf
   ${BREW_PREFIX}/opt/fzf/install

@@ -14,9 +14,15 @@ esac
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
 # * ~/.extra can be used for other settings you don’t want to commit.
+# * ~/.fzf.bash is from brew installation of fzf. (Mac only)
 for file in ~/.{path,bash_prompt,exports,bash_aliases,functions,extra,fzf.bash}; do
 	[ -r "$file" ] && [ -f "$file" ] && source "$file";
 done;
+unset file;
+
+# Load fzf key-bindings (Linux only).
+file=/usr/share/doc/fzf/examples/key-bindings.bash;
+[ -r "$file" ] && [ -f "$file" ] && source "$file";
 unset file;
 
 # Case-insensitive globbing (used in pathname expansion)
