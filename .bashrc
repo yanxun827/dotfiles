@@ -14,7 +14,7 @@ esac
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
 # * ~/.extra can be used for other settings you don’t want to commit.
-# * ~/.fzf.bash is from brew installation of fzf.
+# * ~/.fzf.bash is from brew installation of fzf. (Mac only)
 for file in ~/.{path,bash_prompt,exports,bash_aliases,functions,extra,fzf.bash}; do
 	[ -r "$file" ] && [ -f "$file" ] && source "$file";
 done;
