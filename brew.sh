@@ -23,6 +23,7 @@ BREW_PREFIX=$(brew --prefix)
 
 # Install a modern version of Bash.
 brew_install bash
+brew_install bash-completion@2
 
 # Switch to using brew-installed bash as default shell
 if ! fgrep -q "${BREW_PREFIX}/bin/bash" /etc/shells; then
