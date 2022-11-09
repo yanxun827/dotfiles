@@ -25,6 +25,9 @@ file=/usr/share/doc/fzf/examples/key-bindings.bash;
 [ -r "$file" ] && [ -f "$file" ] && source "$file";
 unset file;
 
+bind -r "\C-t" # Unbind default Ctrl-T for fzf
+bind -x '"\C-f":"fzf-file-widget"' # Bind fzf file command to Ctrl-F
+
 # Case-insensitive globbing (used in pathname expansion)
 shopt -s nocaseglob;
 
