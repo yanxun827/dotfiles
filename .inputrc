@@ -30,6 +30,9 @@ set visible-stats on
 # Show colours for autocomplete
 set colored-stats on
 
+# Show colours for autocomplete prefix
+set colored-completion-prefix on
+
 # Be more intelligent when autocompleting by also looking at the text after
 # the cursor. For example, when the current line is "cd ~/src/mozil", and
 # the cursor is on the "z", pressing Tab will not autocomplete it to "cd
