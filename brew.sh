@@ -66,7 +66,7 @@ if ! brew ls --versions fzf > /dev/null; then
   ${BREW_PREFIX}/opt/fzf/install
 fi
 
-# Create directory and store symlinks for all the gnu tools installed by homebrew. 
+# Create directory and store symlinks for all the gnu tools installed by homebrew.
 # Don't forget to add the directory to `$PATH`.
 mkdir -p "$HOME/gnubin"
 echo "Creating symlinks for GNU binaries"
