@@ -1,3 +1,6 @@
+export LANG="en_US.UTF-8"
+export LC_ALL="en_US.UTF-8"
+
 # fzf options, and commands using fd
 # According to fzf README, --ansi slows down fzf. Remove it if performance slow.
 export FZF_DEFAULT_OPTS='--height 40% --layout=reverse --border --ansi';
