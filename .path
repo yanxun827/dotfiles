@@ -1,4 +1,6 @@
 # for local binaries
 export PATH="$PATH:$HOME/.local/bin";
 export PATH="$PATH:/opt/homebrew/opt/postgresql@17/bin"
+# Obsidian Notes
+export PATH="$PATH:/Applications/Obsidian.app/Contents/MacOS"
 
